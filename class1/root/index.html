@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial scale = 1.0"/>
+        <title>Register form</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="welcome-message">Welcome, please register</h1>
+            <div id="form-holder">
+                <form id="register-form">
+                    <div class="input-holder">
+                        <p>Name:</p>
+                        <input name="first-name" id="last-name" type="text" placeholder="Angélica"/>
+                    </div>
+                    <div class="input-holder">
+                        <p>Last name:</p> 
+                        <input name="last-name" id="last-name"  type="text" placeholder="Guemes"/>
+                    </div> 
+                    <div class="input-holder">
+                        <p>Email:</p>
+                        <input name="email" id="email"  type="email" placeholder="angiege@gmail.com"/>
+                    </div>
+                    <p id="agree-text"> <input type="checkbox"> I would like to receive mails with promotions</p>
+                    <button type="submit" onclick="register(event)">Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>
