@@ -9,7 +9,7 @@ which changed.
 CLI
 Command line interface, a method that allows users to interact with a program through a simple text inputs (commands).
 React has its own CLI. However, up to now it only allows to create an app.
->>$ create-react-app
+>>$ npx create-react-app
 
 CREATE APP
 C:\Users\Ariadna Angelica\Documents\coderhouse\clases-local\clase2\ecommerceApp>npx create-react-app ecommerce-guemes
@@ -21,7 +21,7 @@ REMOVE APP
 remove whole dir
 >>$ rm -fR <dir>
 
-UPLOAD APP TO GITHUB
+UPLOAD APP TO GITHUB (for 1st time)
 Enter github > create new repo (dont select any checkbox)> push an existing repo: 
 >>$ git remote add origin <your-repo-url>
 >>$ git branch -M main
@@ -29,3 +29,9 @@ Enter github > create new repo (dont select any checkbox)> push an existing repo
 >>$ git commit -m "Commit message"
 >>$ git push origin main
 >>$ git push -u origin main
+
+PUSH APP CHANGES TO GITHUB
+>>$ git status (to see what files changed)
+>>$ git add .
+>>$ git commit -m "descriptive messae of the changes to upload"
+>>$ git push origin main OR git push origin <the branch to upload to>

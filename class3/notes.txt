@@ -1,0 +1,54 @@
+SUGAR-SYNTAX
+Syntactic sugar refers to a feature in a language that allows 
+programmers to write code with less typing involved or easier, 
+but doesn’t really add any new functionality to the language 
+that it didn’t already have.
+
+It makes the code more readable, clear and clean.
+
+For example: 
+- Use a ternary operator instead of the well-known if()..else... statement
+- const array2 = [...anotherArray, 6, 7, 8]
+
+WEBPACK
+It is a module bundler (empaquetador de modulos). It is one of the most
+widely used currently for Front-End devs.
+Module bundlers help compile the project. It is to prepare code for 
+production. Other module bundlers: Rollup and Parcel.
+
+Webpack was created in late 2012. Used for react or angular, implemented on 
+well known apps such as: Twitter, Instagra,, Paypal, web version pf whatsapp
+
+Webcap transforma varios archivos (js, hbs, css, sass...) a assets que 
+pueda entender el navegador. Tambien, hace un minimizer de estos.
+
+To create build folder, to deploy
+>>$ npm run build
+
+Dont run, as it can not be reverted
+>>$ npm run eject
+
+TRANSPILING
+Process of converting code written in one language into another
+For example:
+- typescrypt
+- jsx (javascript xml)
+
+JSX 
+It is javascript + xml
+Differences with HTML
+- Closing tag is optional in JSX, but we should indicate closure by 
+adding the '/' in the opening tag. Meaning we can have only 1 tag but
+it must have the '/' at the end to indicate closure.
+- Attribute class is renamed to classname in JSX
+- we use CamelCase for attributes names.
+
+for react:
+- file format: puede ser js o jsx
+- Code: inside the return we always use JSX
+
+
+
+
+
+
