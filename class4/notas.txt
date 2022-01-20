@@ -1,0 +1,30 @@
+Single page aplication
+Que es?
+
+
+Diseño modular
+es la contruccion de archivos muy pequeños y eso nos facilita a nosoytros el
+reutilizarlos para crear algo más grande.
+Nos facilita el mantenimiento, la depuracion, escalabilidad e incluso los 
+tests.
+
+TIPOS de componentes: 
+Tenemos componentes basados en clases o basados en funciones.
+Ambas pueden recibir props.
+Es mejor function
+Notas:
+* solo se puede enviar un nodo en el return
+
+PATRONES de componentes:
+Componentes de presentacion (stateless)
+  Este componente se limitan simplemente a mostrar datos
+  reciben callbacks por medio de props
+  they can be reused everyhere
+ Componente contenedor (statefull)
+  orientado al funcionamiento de la aplicacion
+  contienes stateless components u otros componentes 
+
+
+PLUGIN
+* rafce: creates a function component
+* react developer tools in chrome
