@@ -9,13 +9,10 @@ function App() {
   return (
     <div className="App">
       <h1>Hello world :) </h1>
-      <ComponentChildren  otherProp="Un titulo">
-        <h1>Hola soy un hijo</h1>
-        jejejej
-      </ComponentChildren>
-      <ClassComponent age={age} name='Angie'></ClassComponent>
-      <FunctionComponent age={age}  name='Andrea'></FunctionComponent>
-      <ItemListContainer></ItemListContainer>
+      <ClassComponent></ClassComponent>
+      <FunctionComponent name = "a"></FunctionComponent>
+      <FunctionComponent ></FunctionComponent>
+
     </div>
   );
 }

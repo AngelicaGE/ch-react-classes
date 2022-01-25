@@ -1,0 +1,47 @@
+component anatomy
+- props
+- statefull- dom sync
+- lifecycle
+
+Props
+What type of value can be a prop?
+- num, bool, array, obj
+- functions
+- components
+- children. Print in parent like {props.children} or {props.children[2]}
+- values injected by libraries (location, routes, translations)
+
+a component can be passed as prop or as a children
+refer images for both examples.
+component-as-children
+component-as-prop
+
+state (class based)
+declare a class extends Component
+we use this.state inside the class (this is an obj)
+use constructure() call super() and initiate your this.state obj
+see imsge: state-class-based
+you can modify the state like: this.setState({title: 'newTitle'})
+
+state (function based)
+we use hook useState
+useState can have string, bools, objects...
+use State is a hook
+
+General hook rules
+hooks must be declare bofre any if or conditional statement
+
+
+In class challenge (done in 5 min):
+- create a page that counts how many times a component has been clicked and print the time of when the last click was made.
+https://stackblitz.com/edit/react-ts-8djjaf?file=Clicker.jsx
+
+
+
+Tareas asynconas se deben hacer dentro de effect
+
+COmponent life cyle
+START
+MOUNT
+CHANGE
+DISMOUNT
