@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
-import Item from '../item/Item';
+import '../../styles/ItemListContainer.css';
+import ItemCount from '../component-challenge2/ItemCount';
 
 const items = [
-    {id: "1", name: "iPhoneX",price: "1000", createdBy: "a"},
-    {id: "2", name: "Samsung",price: "300", createdBy: "a"},
-    {id: "3", name: "Huawei",price: "1400", createdBy: "a"},
-    {id: "4", name: "Galaxi",price: "100", createdBy: "a"}
-
+    {id: "1", name:"Camisa Polo", maxAvailable:5, initial:1},
+    {id: "2", name:"Camisa Polo", maxAvailable:7, initial:1}
 ]
 
 const ItemListContainer = () => {
@@ -18,26 +16,19 @@ const ItemListContainer = () => {
     }
 
   return (
-      <div>
+      <div className='ItemListContainer'>
         <h2>LISTA DE PRODUTOS</h2>
-        <h3>producto seleccionado: </h3>
-        <p>{selectedItem ? selectedItem.name : 'Ninguno'}</p>
-        {//OPTION 1
-            /*items.map(item => (
-                //<Item key={item.id} item={item}></Item>
-                <Item key={item.id} id={item.id} {...item} setSelectedItem={setSelectedItem} otherFunction={otherFunction}></Item>
-            ))*/}
-
         {
-            //OPTION 2
-            items.map(({id, name, price}) => (
-                <Item key={id} 
-                    id={id} 
-                    name={name} 
-                    price={price}
-                    setSelectedItem={setSelectedItem}
-                    otherFunction={otherFunction}
-                ></Item>
+            items.map(({id, name, maxAvailable, initial}) => (
+                <>
+                    <ItemCount className="item-count" key={id} 
+                        name={name} 
+                        maxAvailable={maxAvailable}
+                        initial={initial}
+                    ></ItemCount>
+                    <hr />
+                </>
+            
             ))
         }
       </div>

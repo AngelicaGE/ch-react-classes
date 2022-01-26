@@ -1,0 +1,44 @@
+
+* { box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+} 
+    
+.ItemCount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.click-container{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(4, 65, 34);
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: auto;
+    padding: 4px 0;
+    margin-top:20px;
+}
+
+.click-container button{
+    width: 20px;
+}
+
+.ItemCount > button{
+    width: 100px;
+    margin: 10px auto;
+    border-color: rgb(4, 65, 34);
+    color: white;
+}
+
+.disabled{
+    background-color:gray;
+
+}
+
+.enabled{
+    background-color: rgb(22, 112, 82);
+}
